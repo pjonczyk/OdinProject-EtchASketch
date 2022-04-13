@@ -1,0 +1,18 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+    min-height: 500px;
+    
+}
+
+.gridItem {
+    border: 1px solid gray;
+    aspect-ratio: 1;
+}
+
+.mainContent {
+    display: flex;
+}
