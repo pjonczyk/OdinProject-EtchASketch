@@ -9,10 +9,17 @@
 }
 
 .gridItem {
-    border: 1px solid gray;
     aspect-ratio: 1;
+}
+
+.gridItemBorderColor {
+    border: 1px solid gray;
 }
 
 .mainContent {
     display: flex;
+}
+
+.gridlinesButtonActive {
+    background-color: blue;
 }
