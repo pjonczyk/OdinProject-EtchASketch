@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Etch-a-Sketch</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
-    </head>
-    <body>
-        <div class="header">
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="header">
+        Etch-a-Sketch
+    </div>
+    <div class="mainContent">
+      <div class="controls">
+        <input type="color" id="colorPicker" name="head" />
+        <button id="resetButton">Clear</button>
+        <button id="gridlinesButton" class="gridlinesButton">
+          Grid Lines
+        </button>
+        <button id="rainbowButton">Rainbow Colors</button>
+        <div id="sizeValue" class="size-value">25 x 25</div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="gridSize"
+            class="slider"
+            id="myRange"
+          />
         </div>
-        <div class="mainContent">
-        <div class="controls">
-            <button id="resetButton">Clear</button>
-            <button id="gridlinesButton" class="gridlinesButtonActive">Grid Lines</button>
-            <input type="color" id="colorPicker" name="head">
-            <div class="slidecontainer">
-                <input type="range" min="1" max="50" value=gridSize class="slider" id="myRange">
-            </div>
-        </div>
-        <div class="gridContainer"></div>
-        </div>
-        <div class="footer">
-
-        </div>
-    </body>
+      </div>
+      <div class="gridContainer"></div>
+    </div>
+    <div class="footer"></div>
+  </body>
 </html>
